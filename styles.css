@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Skranji;
+    src: url("/fonts/Skranji/Skranji-Regular.ttf");
+}
+:root {
+    --title-font: Skranji;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Navigation bar stylings*/
+body {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25%;
+    height: 75px;
+    position: fixed;
+
+    
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+}
+#navbarList {
+    display: flex;
+    gap: 15px;
+
+    font-family: var(--title-font);
+    letter-spacing: 7px;
+    font-size: 2rem;
+    color: white;
+
+    list-style-type: none;
+}
+.navbarLinks:link,.navbarLinks:visited {
+    text-decoration: none;
+    color: white;
+}
+.navbarLinks:hover {
+    color:lightskyblue;
+}
+
+/*Homepage Stylings*/
+#homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("img/dark-cave-large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
+}
+#title {
+    text-align: center;
+
+    font-family: var(--title-font);
+    color: white;
+
+    letter-spacing: 8px;
+    font-size: 120px;
+    
+}
+
+/*Dev about page sytlings*/
+#aboutDev {
+    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: coral;
+
+}
+#aboutUpperImage {
+    width: 100vw;
+    height: 60vh;
+
+    background-color: lightsalmon;
+    background-image: url("/img/man-falling-b-and-w.jpg");
+}
+
+/*About */
+#aboutGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: chocolate;
+}
