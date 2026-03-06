@@ -24,6 +24,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #mainTitle {
     color: white;
     font-size: 9rem;
@@ -35,4 +36,18 @@ body {
 
     padding-left: 64px;
     padding-bottom: 32px;
+}
+
+#marinePierce {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("img/caveBackground-purple.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
