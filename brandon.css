@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Jersey10;
+    src: url("font/Jersey10/Jersey10-Regular.ttf");
+}
+:root {
+    --main-font: Jersey10;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#homepage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("img/stalactite-cave-ceiling.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mainTitle {
+    color: white;
+    font-size: 9rem;
+
+    font-family: var(--main-font);
+
+    padding: 0px;
+    margin: 0px;
+
+    padding-left: 64px;
+    padding-bottom: 32px;
+}
