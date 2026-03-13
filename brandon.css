@@ -2,6 +2,14 @@
     font-family: Jersey10;
     src: url("font/Jersey10/Jersey10-Regular.ttf");
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
 :root {
     --main-font: Jersey10;
 }
@@ -50,4 +58,45 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#dark-oasis-about {
+  min-height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  padding: 32px;
+  
+  background: url('img/do-about-background.gif');
+  filter: brightness(75%);
+}
+
+.info-container > h1 {
+  font-size: 7rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center; 
+}
+
+.info-container > p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.gameplay-img {
+  width: 500px;
+  border-radius: 14px;
+  border: 1px solid white;
 }
