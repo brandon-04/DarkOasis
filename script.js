@@ -3,6 +3,7 @@ function getTimeAndDate() {
   
   day = formatTimeAndDate(date.getDate());
   month = formatTimeAndDate(date.getMonth() + 1);
+  document.querySelector('#date').textContent = `${day}/${month}/${date.getFullYear()}`;
 }
 
 function formatTimeAndDate(num) {

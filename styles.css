@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Jersey10;
+    src: url("font/Jersey10/Jersey10-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: Jersey10;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#homepage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("img/stalactite-cave-ceiling.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mainTitle {
+  color: white;
+  font-size: 9rem;
+  font-family: var(--main-font);
+  padding: 0px;
+  margin: 0px;
+  padding-left: 64px;
+  padding-bottom: 32px;
+}
+
+#marinePierce {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("img/caveBackground-purple.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dark-oasis-about {
+  min-height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 32px;
+  
+  background: url('img/do-about-background.gif');
+  filter: brightness(75%);
+}
+
+.info-container > h1 {
+  font-size: 8rem;
+  font-family: var(--main-font);
+  text-align: center; 
+}
+
+.info-container > p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.gameplay-img {
+  width: 500px;
+  border-radius: 14px;
+  border: 1px solid white;
+}
+
+#footer {
+  background-color: rgb(12, 12, 12);
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-links > a > img {
+  width: 48px;
+}
+
+.footer-title-container > h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: var(--main-font);
+  letter-spacing: 4px;
+}
+
+.date-container > p {
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: lightgray;
+}
